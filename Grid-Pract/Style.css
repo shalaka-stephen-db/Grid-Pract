@@ -1,0 +1,76 @@
+*{ Margin:0;
+  padding:0;
+}
+
+.nology{ 
+  color:black;
+  background-color: violet;
+  width:20%;  
+}
+nav{
+  display:flex;
+  border:2px solid black;
+  justify-content:space-evenly;
+  text-align:left;
+  width:100%;
+  Height:40px;
+}
+.temp{
+  display:grid;
+  grid-template-areas: ". img . " "abt abt abt" "hob hob hob" "con con con" "emp emp emp" "edu edu edu";
+  width:100%;
+}
+#abt{
+  grid-area:abt;
+  height: 10vh;
+  margin-left: auto;
+  width:100%;
+ 
+}
+#hob{
+  grid-area:hob;
+  height:10vh;
+  margin-left: auto;
+  width:100%;
+ 
+}
+#con{
+  grid-area:con;
+  height:10vh;
+  margin-left: auto;
+  width:100%;
+
+}
+#emp{
+  grid-area:emp;
+  height:20vh;
+}
+#edu{
+  grid-area:edu;
+  height:10vh;
+}
+img{
+  height:300px;
+  width:300px;
+  border-radius:50%;
+  grid-area: img;
+  justify-self: center;
+  margin:40px;
+}
+
+Section{
+  border:2px solid black;
+  margin-top: 30px;
+  background-color: violet;
+}
+
+@media screen and (min-width:550px) {
+  section {
+   width:100%;
+  }
+  .temp{
+    display:grid;
+    grid-template-areas: "img abt abt" "img hob hob" "img con con" "emp emp emp" "edu edu edu";
+    color:green;
+  }
+}
